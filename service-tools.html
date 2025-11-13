@@ -219,6 +219,14 @@
         </div>
     </footer>
 
+    <!-- Image Popup Modal -->
+    <div id="imagePopupModal" class="image-popup-modal">
+        <div class="image-popup-content">
+            <button class="image-popup-close" aria-label="Close image">&times;</button>
+            <img id="popupImage" src="" alt="Enlarged image">
+        </div>
+    </div>
+
     <script>
     (function() {
       const header = document.querySelector('header');
@@ -231,6 +239,62 @@
       }
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+    })();
+
+    // Image popup functionality
+    (function() {
+      const modal = document.getElementById('imagePopupModal');
+      const popupImage = document.getElementById('popupImage');
+      const closeBtn = document.querySelector('.image-popup-close');
+      
+      // Function to open popup
+      function openPopup(imgSrc, imgAlt) {
+        popupImage.src = imgSrc;
+        popupImage.alt = imgAlt;
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      }
+      
+      // Function to close popup
+      function closePopup() {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+        // Clear image source after animation
+        setTimeout(() => {
+          if (!modal.classList.contains('show')) {
+            popupImage.src = '';
+          }
+        }, 300);
+      }
+      
+      // Add click handlers to all images
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        // Skip logo and small icons
+        if (!img.src.includes('Logo.png') && img.offsetWidth > 100) {
+          img.classList.add('clickable-image');
+          img.addEventListener('click', function() {
+            openPopup(this.src, this.alt);
+          });
+        }
+      });
+      
+      // Close button click
+      closeBtn.addEventListener('click', closePopup);
+      
+      // Close on overlay click
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closePopup();
+        }
+      });
+      
+      // Close on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          closePopup();
+        }
+      });
     })();
     </script>
 </body>

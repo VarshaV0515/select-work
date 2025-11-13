@@ -1,4 +1,4 @@
-# Select Work Portfolio
+# Select Work
 
 A clean, focused portfolio website showcasing Varsha Patil's key product design and strategy projects. This portfolio emphasizes selected high-impact work with a minimalist design approach.
 

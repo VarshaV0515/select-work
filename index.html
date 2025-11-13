@@ -3,44 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Varsha Patil</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Your Name</a>
+    <!-- Header -->   
+     <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#home" aria-label="Home">
+                    <img src="assets/images/Logo.png" alt="Varsha logo" height="28" />
+                </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi! I'm [Your Name].</h1>
-                <p class="hero-subtitle">A [your role] obsessed with [your passion] and [your expertise]. Based in [your location].</p>
-                
-                <div class="experience-highlights">
-                    <div class="highlight">
-                        <span class="label">Current/</span>
-                        <span class="value">[Your Current Role] at [Company]</span>
-                    </div>
-                    <div class="highlight">
-                        <span class="label">Previous/</span>
-                        <span class="value">[Your Previous Role] for [X] years</span>
-                    </div>
-                </div>
+            <div class="nav-capsule">
+                <nav class="nav-links" aria-label="Primary">
+                    <a href="#work" class="active" aria-current="true">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="resume.html">Resume</a>
+                </nav>
             </div>
         </div>
+    </header>
+ <!-- Hero Header Section -->
+    <section class="hero-header">   
+        <h2 class="hero-title">Building products that unleash potential and drive impact.</h2>
+        <h2 class="hero-subtitle">
+            Based out of San Francisco Bay Area<br>
+        </h2>
     </section>
 
     <!-- Selected Work Section -->
@@ -49,86 +40,143 @@
             <h2>Selected work</h2>
             
             <div class="work-grid">
-                <!-- Project 1 -->
-                <div class="work-item">
+                <!-- Spacejoy Project -->
+                <a href="spacejoy.html" class="work-item">
                     <div class="work-image">
-                        <div class="image-placeholder">Project Screenshot</div>
+                        <div class="image-placeholder">
+                            <img src="assets/images/Spacejoy_Project_card_Image.png" alt="Spacejoy Platform snapshot">
+                        </div>
                     </div>
                     <div class="work-content">
-                        <h3>Project Name</h3>
-                        <p class="work-category">Design direction and leadership</p>
-                        <p class="work-description">Brief description of the project and your role in it. What problems did you solve and what impact did it have?</p>
+                        <h3>An AI-powered tool to turn inspiration into shoppable designs</h3>
+                        <div class="work-tags">
+                            <span class="work-category">ML based visual models</span>
+                            <span class="work-category">ecommerce</span>
+                            <span class="work-category">Spacejoy</span>
+                        </div>
+                        <p class="work-description">From Inspiration to Purchase: Designing a Self-Serve Tool that Lifted Revenue by 32%</p>
                     </div>
-                </div>
+                </a>
+
+                <!-- Project 1 - Commented out temporarily -->
+                <!--
+                <a href="project-curbside.html" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/images/Pharmacy_cover_image.png" alt="Curbside prescription pickup and contactless payment project screenshot">
+                    </div>
+                    <div class="work-content">
+                        <h3>Curbside prescription pickup and contactless payment</h3>
+                        <div class="work-tags">
+                            <span class="work-category">Walmart</span>
+                            <span class="work-category">Omnichannel Experience</span>
+                            <span class="work-category">Health & Wellness</span>
+                        </div>
+                        <p class="work-description">Online Prescription Ordering and Curbside Pickup for a Seamless Omnichannel Experience</p>
+                    </div>
+                </a>
+                -->
 
                 <!-- Project 2 -->
-                <div class="work-item">
+                <a href="flocare.html" class="work-item">
                     <div class="work-image">
-                        <div class="image-placeholder">Project Screenshot</div>
+                        <img src="assets/images/Flocare_cover_image.png" alt="Flocare Platform snapshot">
                     </div>
                     <div class="work-content">
-                        <h3>Another Project</h3>
-                        <p class="work-category">Product design and development</p>
-                        <p class="work-description">Description of another significant project. Focus on the key challenges and outcomes.</p>
+                        <h3>A Home Health Clinician's Assistant</h3>
+                        <div class="work-tags">
+                            <span class="work-category">Healthcare Delivery</span>
+                            <span class="work-category">Efficiency</span>
+                            <span class="work-category">0-1 Product</span>
+                        </div>
+                        <p class="work-description">Assists home health clinicians in the field to enhance productivity and organization</p>
                     </div>
-                </div>
+                </a>
 
                 <!-- Project 3 -->
-                <div class="work-item">
+                <a href="service-tools.html" class="work-item">
                     <div class="work-image">
-                        <div class="image-placeholder">Project Screenshot</div>
+                        <img src="assets/images/ACC_Manager_Tools_cover_image.png" alt="Curbside prescription pickup and contactless payment project screenshot">
                     </div>
                     <div class="work-content">
-                        <h3>Third Project</h3>
-                        <p class="work-category">UX/UI Design</p>
-                        <p class="work-description">Another project showcasing your skills and expertise in a different area.</p>
+                        <h3>Digitizing Service Tools for Maximum Efficiency</h3>
+                        <div class="work-tags">
+                            <span class="work-category">Walmart</span>
+                            <span class="work-category">Digital Transformation</span>
+                            <span class="work-category">Autocare efficiency</span>
+                            <span class="work-category">0-1 Product</span>
+                        </div>
+                        <p class="work-description">Comprehensive All-in-One Management Tool designed specifically for Auto Care Centers</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="about" class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-title-group">
+                <h2 class="testimonial-title">What My Collaborators Say</h2>
+                <p class="testimonial-subtitle">Their feedback drives my passion and commitment</p>
+            </div>
+            <div class="testimonial-main">
+                <div class="testimonial-row">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-col">
+                        <h6 class="testimonial-quote">
+                            "She played a crucial role in identifying the problems we needed to solve..."
+                        </h6>
+                        <div class="testimonial-author">
+                            <span class="testimonial-author-name">Gaurav Gupta</span>
+                            <span class="testimonial-author-desc">Product Leadership, Coupang, ex-Uber</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-col">
+                        <h6 class="testimonial-quote">
+                            "...Her commitment to achieve excellence in every project and every role is impressive and inspiring"
+                        </h6>
+                        <div class="testimonial-author">
+                            <span class="testimonial-author-name">Shivanku Kumar</span>
+                            <span class="testimonial-author-desc">Product Design, Meta</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-col">
+                        <h6 class="testimonial-quote">
+                            "I can confidently say, the products are a direct reflection of her commitment to quality and user experience..."
+                        </h6>
+                        <div class="testimonial-author">
+                            <span class="testimonial-author-name">Ramya Laxman</span>
+                            <span class="testimonial-author-desc">Product Leadership, Wayfair</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2>About</h2>
-                <p>Brief introduction about yourself, your background, and what drives you in your work. Keep it concise and impactful.</p>
-                
-                <div class="skills-highlights">
-                    <div class="skill-category">
-                        <h4>Design Skills</h4>
-                        <p>User Research, Prototyping, Visual Design, Design Systems</p>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Leadership</h4>
-                        <p>Team Management, Strategy, Stakeholder Communication</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-content">
-                <h2>Get in touch</h2>
-                <p>Interested in working together? Let's connect.</p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-link">Email</a>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-link">LinkedIn</a>
-                    <a href="https://twitter.com/yourhandle" class="contact-link">Twitter</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; [Your Name]. Designed in [Your Location].</p>
+            <p>© 2025 VARSHA PATIL. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    (function() {
+      const header = document.querySelector('header');
+      function onScroll() {
+        if (window.scrollY > 4) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+    </script>
 </body>
 </html> 

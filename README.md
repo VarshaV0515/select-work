@@ -1,83 +1,69 @@
 # Select Work Portfolio
 
-A clean, minimal portfolio website inspired by Anukriti Verma's design aesthetic. This is a simplified version focused on showcasing your best work with reduced whitespace and streamlined content.
+A clean, focused portfolio website showcasing Varsha Patil's key product design and strategy projects. This portfolio emphasizes selected high-impact work with a minimalist design approach.
 
-## Features
+## Project Overview
 
-- **Clean, Minimal Design**: Inspired by modern portfolio aesthetics
-- **Responsive Layout**: Works perfectly on desktop, tablet, and mobile
-- **Fast Loading**: Lightweight HTML and CSS
-- **Easy Customization**: Simple structure for quick updates
+This is a **separate portfolio project** designed to showcase curated, key projects in a clean and professional presentation. It focuses on demonstrating core competencies and measurable impact through selected work examples.
 
-## Getting Started
+## Key Features
 
-1. **Customize the Content**:
-   - Replace `[Your Name]` with your actual name throughout the HTML
-   - Update the hero section with your role, passion, and location
-   - Add your current and previous experience
-   - Replace project placeholders with your actual work
+- **Focused Content**: Showcases 3-4 carefully selected projects
+- **Clean Design**: Minimal, professional aesthetic
+- **Impact-Driven**: Emphasizes measurable results and business outcomes
+- **Responsive Layout**: Works across all devices
+- **Fast Loading**: Lightweight and optimized
 
-2. **Add Your Projects**:
-   - Replace the image placeholders with actual project screenshots
-   - Update project titles, categories, and descriptions
-   - Add links to live projects if available
+## Projects Featured
 
-3. **Update Contact Information**:
-   - Replace email, LinkedIn, and Twitter links with your actual profiles
-   - Update the footer with your location
+1. **Curbside Prescription Pickup** - Walmart omnichannel health & wellness solution
+2. **Home Health Clinician's Assistant** - Flocare productivity platform
+3. **Auto Care Center Management Tools** - Walmart digital transformation initiative
 
-4. **Customize Colors** (Optional):
-   - The design uses a neutral color palette
-   - You can modify colors in the CSS file to match your brand
+## Technology Stack
 
-## File Structure
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts (Inter, Quattrocento)
+
+## Structure
 
 ```
 select-work-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styling
-└── README.md           # This file
+├── index.html              # Main portfolio page
+├── about.html              # About page
+├── resume.html             # Resume page
+├── project-curbside.html   # Detailed project case study
+├── styles.css              # Styling
+├── assets/                 # Images and media
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+└── README.md              # This file
 ```
 
-## Customization Guide
+## Purpose & Use Cases
 
-### Personal Information
-- Update the title tag in `<head>`
-- Replace all instances of `[Your Name]` with your name
-- Update the hero section with your introduction
-- Modify experience highlights with your current and previous roles
+- **Job Applications**: Professional presentation for potential employers
+- **Client Presentations**: Clean showcase for consulting opportunities
+- **Professional Networking**: Quick overview of key capabilities
+- **Stakeholder Meetings**: Focused project presentations
 
-### Projects
-- Replace `image-placeholder` divs with actual `<img>` tags
-- Update project titles, categories, and descriptions
-- Add more projects by duplicating the `work-item` structure
+## Getting Started
 
-### Styling
-- Colors are defined in CSS variables for easy customization
-- Typography uses Inter font family (can be changed)
-- Spacing and layout can be adjusted in the CSS file
+1. Clone the repository
+2. Open `index.html` in a web browser
+3. Customize content as needed
+4. Deploy to your preferred hosting platform
 
-## Deployment
+## Deployment Options
 
-You can deploy this portfolio to:
-- GitHub Pages (free)
-- Netlify (free)
-- Vercel (free)
-- Any web hosting service
-
-Simply upload the files to your hosting provider.
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- GitHub Pages
+- Netlify
+- Vercel
+- Traditional web hosting
 
 ## License
 
-Feel free to use and modify this template for your personal portfolio.
-
-## Credits
-
-Design inspiration from [Anukriti Verma's portfolio](https://anukriti-verma.webflow.io/) 
+This project is for portfolio demonstration purposes.

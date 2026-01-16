@@ -3291,13 +3291,16 @@ header.is-scrolled {
 
 .image-popup-content {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 95vw;
+    max-height: 95vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     transform: scale(0.8);
     transition: transform 0.3s ease;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;
 }
 
 .image-popup-modal.show .image-popup-content {
@@ -3305,11 +3308,15 @@ header.is-scrolled {
 }
 
 .image-popup-content img {
-    max-width: 100%;
-    max-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: none;
+    min-width: 100%;
     object-fit: contain;
+    object-position: top left;
     border-radius: 8px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: block;
 }
 
 .image-popup-close {

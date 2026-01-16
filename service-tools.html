@@ -253,6 +253,11 @@
         popupImage.alt = imgAlt;
         modal.classList.add('show');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        // Scroll modal to top when opened
+        modal.scrollTop = 0;
+        modal.scrollLeft = 0;
+        // Also ensure page is at top
+        window.scrollTo(0, 0);
       }
       
       // Function to close popup

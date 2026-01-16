@@ -3321,8 +3321,8 @@ header.is-scrolled {
 
 .image-popup-close {
     position: absolute;
-    top: -50px;
-    right: -10px;
+    top: 10px;
+    right: 10px;
     background: rgba(255, 255, 255, 0.9);
     border: none;
     width: 40px;
@@ -3338,6 +3338,7 @@ header.is-scrolled {
     transition: all 0.2s ease;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    z-index: 10001;
 }
 
 .image-popup-close:hover {
@@ -3369,8 +3370,8 @@ header.is-scrolled {
     }
     
     .image-popup-close {
-        top: -45px;
-        right: -5px;
+        top: 8px;
+        right: 8px;
         width: 35px;
         height: 35px;
         font-size: 20px;
@@ -3384,8 +3385,8 @@ header.is-scrolled {
     }
     
     .image-popup-close {
-        top: -40px;
-        right: 0;
+        top: 6px;
+        right: 6px;
         width: 32px;
         height: 32px;
         font-size: 18px;

@@ -137,10 +137,10 @@ header.is-scrolled {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 120px 48px 0; /* same horizontal padding as .container */
+    padding: 120px 48px 48px; /* same horizontal padding as .container, bottom padding for spacing */
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     background: #fafafa;
     box-sizing: border-box;
     align-items: flex-start;
@@ -154,11 +154,11 @@ header.is-scrolled {
     color: #333;
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: -0.2px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
     margin: 0;
 }
 
@@ -166,12 +166,12 @@ header.is-scrolled {
     width: 100%;
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    color: #666;
-    margin: 0 0 12px 0;
+    color: #999;
+    margin: 0;
 }
 
 .experience-highlights {
@@ -201,8 +201,8 @@ header.is-scrolled {
 
 /* Work Section */
 .work-section {
-    padding: 24px 0 80px; /* tighter space above Selected work */
-    margin-top: -48px; /* pull section up without changing hero height */
+    padding: 0 0 80px;
+    margin-top: 0;
 }
 
 .work-section h2 {
@@ -781,17 +781,17 @@ header.is-scrolled {
     .nav-links a { font-size: 14px; padding: 8px 8px; }
     
     .hero-header {
-        padding: 80px 16px 0; /* match .container padding */
-        gap: 8px;
+        padding: 80px 16px 32px;
+        gap: 6px;
     }
     
     .hero-title {
-        font-size: 24px;
-        line-height: 1.4;
+        font-size: 20px;
+        line-height: 1.5;
     }
     
     .hero-subtitle {
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .work-item {
@@ -916,15 +916,15 @@ header.is-scrolled {
 
 @media (max-width: 480px) {
     .hero-header {
-        padding: 60px 16px 0;
+        padding: 60px 16px 24px;
     }
     
     .hero-title {
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .hero-subtitle {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .testimonial-row {
